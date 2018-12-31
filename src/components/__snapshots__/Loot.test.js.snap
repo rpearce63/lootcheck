@@ -21,16 +21,57 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        "Bitcoin balance: ",
-        "",
+        <h3>
+          Bitcoin balance: 
+          
+        </h3>,
+        <small
+          className="bitcoin-rate"
+        >
+          Bitcoin value: 
+          
+        </small>,
       ],
     },
     "ref": null,
     "rendered": Array [
-      "Bitcoin balance: ",
-      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Bitcoin balance: ",
+            "",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Bitcoin balance: ",
+          "",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Bitcoin value: ",
+            "",
+          ],
+          "className": "bitcoin-rate",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Bitcoin value: ",
+          "",
+        ],
+        "type": "small",
+      },
     ],
-    "type": "h3",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -39,16 +80,57 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          "Bitcoin balance: ",
-          "",
+          <h3>
+            Bitcoin balance: 
+            
+          </h3>,
+          <small
+            className="bitcoin-rate"
+          >
+            Bitcoin value: 
+            
+          </small>,
         ],
       },
       "ref": null,
       "rendered": Array [
-        "Bitcoin balance: ",
-        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Bitcoin balance: ",
+              "",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Bitcoin balance: ",
+            "",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Bitcoin value: ",
+              "",
+            ],
+            "className": "bitcoin-rate",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Bitcoin value: ",
+            "",
+          ],
+          "type": "small",
+        },
       ],
-      "type": "h3",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

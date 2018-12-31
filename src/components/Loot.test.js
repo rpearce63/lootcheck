@@ -31,5 +31,9 @@ describe("Loot", () => {
     it("displays the correct bitcoin value", () => {
       expect(loot.find("h3").text()).toEqual("Bitcoin balance: 0.01");
     });
+
+    it("displays the current bitcoin rate", () => {
+      expect(loot.find(".bitcoin-rate").text()).toEqual("Bitcoin value: 1,000");
+    });
   });
 });

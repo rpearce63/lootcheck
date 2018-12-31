@@ -8,15 +8,23 @@ export class Loot extends Component {
   }
 
   computeBitcoin() {
-    const { bitcoin } = this.props;
-    if (Object.keys(bitcoin).length === 0) return "";
-    return (
-      this.props.balance / parseInt(bitcoin.bpi.USD.rate.replace(",", ""), 10)
-    );
+    const bitcoinRate = this.getRate();
+    if (!bitcoinRate) return "";
+    return this.props.balance / parseInt(bitcoinRate.replace(",", ""), 10);
   }
 
+  getRate() {
+    const { bitcoin } = this.props;
+    if (Object.keys(bitcoin).length === 0) return "";
+    return bitcoin.bpi.USD.rate;
+  }
   render() {
-    return <h3>Bitcoin balance: {this.computeBitcoin()}</h3>;
+    return (
+      <div>
+        <h3>Bitcoin balance: {this.computeBitcoin()}</h3>
+        <small className="bitcoin-rate">Bitcoin value: {this.getRate()}</small>
+      </div>
+    );
   }
 }
 
